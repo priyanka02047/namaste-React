@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  /* position: fixed; */
+}
+.logo img {
+  color: black;
+  height: 80px;
+  width: 80px;
+}
+
+.nav-menu > ul {
+  font-size: 20px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.nav-menu ul li {
+  margin: 20px;
+}
+.cart:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+.cart {
+  background-color: beige;
+  height: 250px;
+  width: 200px;
+  padding: 5px;
+  margin: 5px;
+}
+.image-box img {
+  width: 100%;
+  height: 150px;
+}
+.cart-details {
+  height: 100px;
+}
+
+h5 {
+  margin: 5px;
+}
+
+.res-container {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
