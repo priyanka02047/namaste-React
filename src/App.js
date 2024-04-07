@@ -1,0 +1,50 @@
+import ReactDOM from "react-dom/client";
+import { Header } from "./components/Header";
+import Body from "./components/Body";
+
+const AppLayout = () => {
+  return (
+    <div className="applayout">
+      <Header />
+      <Body />
+    </div>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout />);
+
+// import React from "react";
+// import ReactDOM from "react-dom/client";
+// // <div id="parent">
+// //   <div id="child">
+// //     <h1>"hello js"</h1>
+// //   </div>
+// //   <div id="child1">
+// //     <h1>"hello js 1"</h1>
+// //   </div>
+// //   <div id="child2">
+// //     <h1>"hello js 2"</h1>
+// //   </div>
+// // </div>;
+
+// const parent = React.createElement("div", { id: "parent" }, [
+//   React.createElement(
+//     "div",
+//     { id: "child" },
+//     React.createElement("h1", {}, "hello js")
+//   ),
+//   React.createElement(
+//     "div",
+//     { id: "child1" },
+//     React.createElement("h1", {}, "hello js 1")
+//   ),
+//   React.createElement(
+//     "div",
+//     { id: "child2" },
+//     React.createElement("h1", {}, "hello js 2")
+//   ),
+// ]);
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(parent);
