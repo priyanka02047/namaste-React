@@ -4,6 +4,7 @@
   border: 1px solid black;
   /* position: fixed; */
 }
+
 .logo img {
   color: black;
   height: 80px;
@@ -46,4 +47,18 @@ h5 {
   align-content: center;
   display: flex;
   flex-wrap: wrap;
+}
+
+.Shimmer-res-container {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Shimmer-cart {
+  background-color: beige;
+  height: 250px;
+  width: 200px;
+  padding: 5px;
+  margin: 5px;
 }
