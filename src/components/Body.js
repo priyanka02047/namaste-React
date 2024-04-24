@@ -2,6 +2,7 @@ import { RestaurantCard } from "./RestaurantCard";
 import { restaurantData } from "../utils/data";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [data, setData] = useState();
@@ -11,9 +12,11 @@ const Body = () => {
   }, []);
 
   const fetchAPI = () => {
+    // cores soution :- https://github.com/HarshithaSolai/instafood-server/blob/main/solution.md
     setTimeout(() => {
       setData(restaurantData);
     }, 4000);
+    // //https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=31.00480&lng=75.94630&restaurantId=415896&catalog_qa=undefined&isMenuUx4=true&submitAction=ENTER
     //Url is not working because of cors
     // const url =
     //   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=31.00480&lng=75.94630&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
@@ -62,7 +65,9 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filtersData.map((item) => (
-          <RestaurantCard key={item.info.id} restaurant={item} />
+          <Link to={`/restaurant/${item.info.id}`} key={item.info.id}>
+            <RestaurantCard restaurant={item} />
+          </Link>
         ))}
       </div>
     </div>
