@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
-export const RestaurantMenu = ({ id }) => {
-  const [restaurantMenu, setRestaurantMenu] = useState([]);
+export const RestaurantMenu = () => {
+  const { resId } = useParams(); // it will fetch the resid from url
   useEffect(() => {
     //Add fetch Api to fetch restaurant menu items.
-    console.log("id of restaurant", id);
-  }, [id]);
+    console.log("id of restaurant", resId);
+  }, [resId]);
   //   const { name, costForTwo, cuisines, avgRating, cloudinaryImageId } =
   //     restaurant.info;
 
