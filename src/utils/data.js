@@ -40,6 +40,7 @@ export const restaurantData = [
           },
         ],
       },
+      promoted: true,
       isOpen: true,
       type: "F",
       badgesV2: {
@@ -125,6 +126,7 @@ export const restaurantData = [
           },
         ],
       },
+      promoted: false,
       isOpen: true,
       type: "F",
       badgesV2: {
@@ -209,6 +211,7 @@ export const restaurantData = [
           },
         ],
       },
+      promoted: true,
       isOpen: true,
       type: "F",
       badgesV2: {
@@ -286,6 +289,7 @@ export const restaurantData = [
         opened: true,
       },
       badges: {},
+      promoted: false,
       isOpen: true,
       type: "F",
       badgesV2: {
@@ -353,6 +357,7 @@ export const restaurantData = [
         opened: true,
       },
       badges: {},
+      promoted: false,
       isOpen: true,
       type: "F",
       badgesV2: {
@@ -421,6 +426,7 @@ export const restaurantData = [
         opened: true,
       },
       badges: {},
+      promoted: false,
       isOpen: true,
       type: "F",
       badgesV2: {

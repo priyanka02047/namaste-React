@@ -23,3 +23,15 @@ export const RestaurantCard = ({ restaurant }) => {
     </div>
   );
 };
+
+// Higher order component
+export const withPromotedLabel = (RestaurantCard) => {
+  return (props) => {
+    return (
+      <div>
+        <label className="promoted">Promoted</label>
+        <RestaurantCard {...props} />
+      </div>
+    );
+  };
+};
